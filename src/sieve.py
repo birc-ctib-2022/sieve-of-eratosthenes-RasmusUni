@@ -19,7 +19,6 @@ def sieve(n: int) -> list[int]:
         if i%2!=0:
             x=0
             for h in range(3,i+1):
-                    print(i)
                     if i%h!=0:
                         x+=1
                     elif x==i-3 and i%h==0:
