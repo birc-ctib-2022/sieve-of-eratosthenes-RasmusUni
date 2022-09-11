@@ -14,6 +14,7 @@ def sieve(n: int) -> list[int]:
     assert n > 0
     candidates = list(range(2, n + 1))
     primes = []
+    primes.append(candidates[0])
    
     for i in candidates[1:]:
         if i%2!=0:
